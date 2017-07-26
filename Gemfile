@@ -28,7 +28,7 @@ gem "jbuilder", "~> 2.5"
 # gem "redis", "~> 3.0"
 # Use ActiveModel has_secure_password
 # gem "bcrypt", "~> 3.1.7"
-
+gem "bcrypt",         '3.1.11'
 # Use Capistrano for deployment
 # gem "capistrano-rails", group: :development
 
@@ -39,45 +39,26 @@ gem "simplecov", "~> 0.10"
 gem "test-queue" if RUBY_VERSION >= "2.1.0"
 gem "yard", "~> 0.9"
 
-gem "pry"
-gem "rake", "~> 12.0"
-gem "rspec", "~> 3.6.0"
-gem "simplecov", "~> 0.10"
-gem "test-queue" if RUBY_VERSION >= "2.1.0"
-gem "yard", "~> 0.9"
-gem "pry"
-gem "rake", "~> 12.0"
-gem "rspec", "~> 3.6.0"
-gem "simplecov", "~> 0.10"
-gem "test-queue" if RUBY_VERSION >= "2.1.0"
-gem "yard", "~> 0.9"
+gem "jquery-rails"
 
+gem "bootstrap-sass", "3.3.7"
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution
   # and get a debugger console
   gem "byebug", platforms: %i[mri mingw x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 2.13"
+  gem "rails-controller-testing"
   gem "selenium-webdriver"
 end
 
-group :test do
-  gem "codeclimate-test-reporter", "~> 1.0", require: false
-  gem "safe_yaml", require: false
-  gem "webmock", require: false
-end
-
-local_gemfile = "Gemfile.local"
-eval_gemfile local_gemfile if File.exist?(local_gemfile)
-
 group :development do
-  # Access an IRB console on exception pages or
-  # by using <%= console %> anywhere in the code.
+  # Access an IRB console on exception pages or by
+  # using <%= console %> anywhere in the code.
   gem "listen", ">= 3.0.5", "< 3.2"
   gem "web-console", ">= 3.3.0"
-  # Spring speeds up development by keeping your application
-  # running in the background.
-  # Read more: https://github.com/rails/spring
+  # Spring speeds up development by keeping your application running
+  # in the background. Read more: https://github.com/rails/spring
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
 end
