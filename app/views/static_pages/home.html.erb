@@ -1,8 +1,14 @@
-<% provide(:title, I18n.t("static_pages.home2")) %>
-<h1><%= t "static_pages.home" %></h1>
-<p>
-  <%= t "static_pages.home_p1a" %>
-  <a href="http://www.railstutorial.org/">
-  <%= t "static_pages.ruby_on_rails_tutorial" %></a>
-  <%= t "static_pages.home_p1c" %>
-</p>
+<div class="center jumbotron">
+  <h1><%= t "static_pages.welcome_to" %></h1>
+  <h2>
+    <%= t "static_pages.home_p1a" %>
+    <a href="http://www.railstutorial.org/">
+      <%= t "static_pages.ruby_on_rails_tutorial" %>
+    </a>
+    <%= t "static_pages.home_p1c" %>
+  </h2>
+  <%= link_to t("static_pages.sign_up_now"), signup_path,
+    class: "btn btn-lg btn-primary" %>
+</div>
+<%= link_to image_tag("rails.png", alt: t("static_pages.rails_logo")),
+  "http://rubyonrails.org/" %>
