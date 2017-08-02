@@ -1,4 +1,4 @@
-# Files in the config/locales directory are used for internationalization
+    # Files in the config/locales directory are used for internationalization
 # and are automatically loaded by Rails. If you want to use locales other
 # than English, add the necessary files in this directory.
 #
@@ -30,4 +30,26 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  static_pages:
+    title: " | Ruby on Rails Tutorial Sample App"
+    title2: "Ruby on Rails Tutorial Sample App"
+    home: "Sample App"
+    home2: "Home"
+    about: "About"
+    help: "Help"
+    contact: "Contact"
+    test_helper: "test_helper"
+    home_p1a: "This is the home page for the"
+    ruby_on_rails_tutorial: "Ruby on Rails Tutorial"
+    home_p1c: "sample application."
+    the: "The "
+    is_a: "is a"
+    book: "book"
+    and: " and"
+    screencast_series: "screencast series"
+    to_teach_web_development_with: "to teach web development with"
+    ruby_on_rails: "Ruby on Rails"
+    this_is_the_sample_application: "This is the sample application for the tutorial."
+    to_get_help: "To get help on this sample app, see the"
+    rails_tutorial_help: "Rails Tutorial help section"
+    get_help: "Get help on the Ruby on Rails Tutorial at the"
