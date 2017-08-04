@@ -45,12 +45,7 @@ gem "rspec", "~> 3.6.0"
 gem "simplecov", "~> 0.10"
 gem "test-queue" if RUBY_VERSION >= "2.1.0"
 gem "yard", "~> 0.9"
-gem "pry"
-gem "rake", "~> 12.0"
-gem "rspec", "~> 3.6.0"
-gem "simplecov", "~> 0.10"
-gem "test-queue" if RUBY_VERSION >= "2.1.0"
-gem "yard", "~> 0.9"
+gem "bootstrap-sass", "3.3.7"
 
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution
@@ -58,6 +53,8 @@ group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 2.13"
+
+  gem "rails-controller-testing"
   gem "selenium-webdriver"
 end
 
