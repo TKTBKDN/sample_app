@@ -8,7 +8,7 @@ class User < ApplicationRecord
   # add authenticate method, virtual password and password_confirmation
   # attributes, save a securely hashed password_digest attribute to the database
   has_secure_password
-  validates :password, presence: true, length: {minimum: 6}
+  validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
   def self.digest string
     cost =
       if ActiveModel::SecurePassword.min_cost
